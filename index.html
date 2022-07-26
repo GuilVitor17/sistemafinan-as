@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="inc-exp-container2">
+
+        <div class="saldo">
+          <h4>Saldo atual</h4>
+
+          <h1 id="balance" class="balance">R$ 0.00</h1>
+        </div>
+       
+      </div>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Receitas</h4>
+          <p id="money-plus" class="money plus">+ R$0.00</p>
+        </div>
+
+        <div>
+          <h4>Despesas</h4>
+          <p id="money-minus" class="money minus">- R$0.00</p>
+        </div>
+      </div>
+       
+      <div class="transacoes">
+
+      <h3>TRANSAÇOES</h3>
+      
+      <ul id="transactions" class="transactions"></ul>
+
+    </div>
+
+    <div class="add-transacoes">
+
+      <h3>ADICIONAR TRANSAÇÕES</h3>
+      
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Nome</label>
+          <input autofocus type="text" id="text" placeholder="Nome da transação" />
+          <p id="alert"></p>
+        </div>
+
+        <div class="form-control">
+          <label for="amount">Valor <br />
+            <small>(negativo - despesas, positivo - receitas)</small>
+          </label>
+          <input type="number" id="amount" placeholder="Valor da transação" />
+        </div>
+
+        <button class="btn">Adicionar</button>
+      </form>
+    </div>
+  </div>
+
+    <script src="./app/app.js"></script>
+  </body>
+</html>
